@@ -96,6 +96,16 @@ section.slide h3.question
     text-align: center;
 }
 
+.slide code
+{
+    color: #eee !important;
+}
+
+.slide code pre
+{
+    padding: 20px;
+}
+
 .deck-next-link,
 .deck-prev-link
 {

@@ -188,19 +188,16 @@
     <h2>...Seriously?!</h2>
     <h3 class="slide">Functions can also have <span class="highlight red">properties</span>.</h3>
     <div class="slide">
-        <pre>
-            <code>
-                function foo()
-                {
-                    // Some code here.
-                };
+        <code><pre>
+function foo()
+{
+// Some code here.
+};
 
-                foo.bar = "Hi. I'm a property.";
+foo.bar = "Hi. I'm a property.";
 
-                // Prints "Hi. I'm a property."
-                console.log(foo.bar);
-            </code>
-        </pre>
+// Prints "Hi. I'm a property."
+console.log(foo.bar);</pre></code>
     </div>
 </section>
 
@@ -264,20 +261,17 @@
         <li class="slide">In Javascript, a variable's scope starts <span class="highlight yellow">at the beginning</span> of where it's defined, and includes everything "below" it.
         <li class="slide">Only <span class="highlight red">declaration</span> location matter for scope, not where something is called from.
             <div class="slide">
-                <pre>
-                    <code>
-                    function foo(callback) {
-                        // Prints "yo."
-                        callback();
-                    }
+                <code><pre>
+function foo(callback) {
+    // Prints "yo."
+    callback();
+}
 
-                    function bar() {
-                        var test = "yo.";
-                        function cb() { console.log(test); }
-                        foo(cb);
-                    }
-                    </code>
-                </pre>
+function bar() {
+    var test = "yo.";
+    function cb() { console.log(test); }
+    foo(cb);
+}</pre></code>
             </div>
         </li>
     </ul>
@@ -288,8 +282,18 @@
     <h3 class="slide">
         Unfortunately, there's <span class="highlight yellow">exceptions</span>.
         <ul>
-            <li class="slide"><span class="monospace highlight yellow">this</span></li>
-            <li class="slide"><span class="monospace highlight red">arguments</span></li>
+            <li class="slide">
+                <span class="monospace highlight red">arguments</span>
+                <ul>
+                    <li class="slide">Array-like object, not an actual array!</li>
+                </ul>
+            </li>
+            <li class="slide">
+                <span class="monospace highlight yellow">this</span>
+                <ul>
+                    <li class="slide">Keyword, not a variable!</li>
+                </ul>
+            </li>
         </ul>
     </h3>
     <br/>
@@ -299,11 +303,35 @@
 <section class="slide">
     <h2>Is 'this'?</h2>
     <div class="slide">
-        <pre><code>
+        <code><pre>
+var monkey = {
+    bananas: [...],
+    eatAllBananas: function()
+    {
+        function eatBanana(banana)
+        {
+            // Peel the banana?
+            this.peel(banana);
+        }
+
+        this.bananas.forEach(peel);
+    },
+
+    peel: function(){...}
+}</pre></code>
+    </div>
+</section>
+
+<section class="slide">
+    <h2>Is 'this'?</h2>
+    <div>
+        <code><pre>
 var <span class="highlight red">monkey</span> = {
     <span class="highlight yellow">bananas</span>: [...],
-    eatAllBananas: function() {
-        function eatBanana(banana) {
+    eatAllBananas: function()
+     {
+        function eatBanana(banana)
+        {
             // Peel the banana?
             <span class="highlight yellow">this</span>.peel(banana);
         }
@@ -312,8 +340,7 @@ var <span class="highlight red">monkey</span> = {
     },
 
     peel: function(){...}
-}
-        </code></pre>
+}</pre></code>
     </div>
 </section>
 
@@ -324,7 +351,41 @@ var <span class="highlight red">monkey</span> = {
 <section class="slide">
 </section>
 
-<!----------------------------------->
+<section class="slide">
+    <h2>Honorable Mentions</h2>
+    <h3 class="slide">There are lots of tools out there that help.</h3>
+    <ul>
+        <li class="slide">
+            <a href="http://jquery.com">jQuery</a> - A lightweight framework designed to ease use of javascript.
+            <ul>
+                <li class="slide">Used by 56.7% of all websites.</li>
+                <li class="slide">Used by 91.7% of all sites using external javascript libraries.</li>
+            </ul>
+        </li>
+        <li class="slide">
+            <a href="http://prototypejs.com">Prototype</a> - provides a simple api for common web tasks.
+            <ul>
+                <li class="slide">Extends the existing Javascript objects.</li>
+                <li class="slide">Has a more conventional Class system.</li>
+            </ul>
+        </li>
+        <li class="slide">
+            <a href="http://mootools.net">MooTools</a> - An object-oriented framework for writing cross-browser web applications.
+            <ul>
+                <li class="slide">Focuses on extending core Javascript language.</li>
+                <li class="slide">Attempts to hide differences between different implementations.</li>
+            </ul>
+        </li>
+    </ul>
+    <h3 class="slide"><span class="larger">And thousands more!</span></h3>
+</section>
+
+<section class="slide">
+    <h1>Let's see some jQuery</h1>
+</section>
+
+<section class="slide">
+</section>
 
 <section class="slide">
     <h2>Questions?</h2>
