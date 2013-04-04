@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+
+    <title>Javascript: The Basics</title>
+
+    <!-- Required stylesheet -->
+    <link rel="stylesheet" href="/vendor/deckjs/core/deck.core.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Extension CSS files go here. Remove or add as needed. -->
+    <link rel="stylesheet" href="/vendor/deckjs/extensions/goto/deck.goto.css">
+    <link rel="stylesheet" href="/vendor/deckjs/extensions/menu/deck.menu.css">
+    <link rel="stylesheet" href="/vendor/deckjs/extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" href="/vendor/deckjs/extensions/status/deck.status.css">
+    <link rel="stylesheet" href="/vendor/deckjs/extensions/hash/deck.hash.css">
+    <link rel="stylesheet" href="/vendor/deckjs/extensions/scale/deck.scale.css">
+
+    <!-- Style theme. More available in /themes/style/ or create your own. -->
+    <link rel="stylesheet" href="/vendor/deckjs/themes/style/neon.css">
+
+    <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+    <link rel="stylesheet" href="/vendor/deckjs/themes/transition/horizontal-slide.css">
+
+    <!-- Required Modernizr file -->
+    <script src="/vendor/deckjs/modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+
+<section class="slide">
+    <h1>Javascript: The Basics</h1>
+</section>
+
+<section class="slide">
+    <h2>You all know Javascript, right?</h2>
+    <div class="slide">
+        <img src="/images/hipstersteve_internets.png" style="width: 800px; height: 800px;">
+    </div>
+</section>
+
+<section class="slide">
+    <h1>History</h1>
+</section>
+
+<section class="slide">
+    <h2>Javascript actually was...</h2>
+    <ul>
+        <li class="slide">Created at Netscape by <span class="highlight orange">Brendan Eich</span>.</li>
+        <li class="slide">Supposed to be a compliment to Java.</li>
+        <li class="slide">Originally called <span class="highlight yellow">LiveScript.</span></li>
+        <li class="slide">Renamed to <span class="highlight red">JavaScript</span> to help Java compete with C++.</li>
+        <li class="slide"><u>Not</u> directly based on Java, despite the name.</li>
+        <li class="slide">Submitted as a standard in 1994, renamed to <span class="highlight blue">ECMAScript</span>.</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>So, there's only one version...</h2>
+    <ul>
+        <li class="slide">
+            No, there's at least <span class="highlight orange">five</span> major variants.
+            <ul>
+                <li class="slide"><span class="highlight blue">ECMAScript</span> - Original standard (used in Chrome, ChromeOS, Opera, node.js)</li>
+                <li class="slide"><span class="highlight red">JavaScript</span> - Mozilla's implementation (used in Firefox, Thunderbird, Firefox OS)</li>
+                <li class="slide"><span class="highlight green">JScript</span> - Microsoft's implementation (used in IE, Windows 8, and various MS Products)</li>
+                <li class="slide"><span class="highlight pink">ActionScript</span> - Adobe's implementation (used as scripting for Flash)</li>
+                <li class="slide"><span class="highlight yellow">JSHarmony</span> - Javascript: The Next Generation (proposal for ECMAScript)</li>
+            </ul>
+        </li>
+        <li class="slide">And each has multiple versions!</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>...what are we talking about then?</h2>
+    <ul>
+        <li class="slide">We're talking about <span class="highlight blue">ECMAScript 5</span>.</li>
+        <li class="slide">
+            Why?
+            <ul>
+                <li class="slide">It's the most common subset.</li>
+                <li class="slide">
+                    I like
+                    <span id="google">
+                        <span class="monospace">
+                            <span class="highlight blue">G</span><span class="small highlight red"><</span><span class="small highlight yellow">3</span><span class="highlight blue">g</span><span class="highlight green">l</span><span class="highlight red">e</span>
+                        </span>
+                    </span>
+                   <span class="highlight yellow">Chrome.</span>
+                </li>
+            </ul>
+            <div class="slide">
+                <!-- Deal with it. -->
+                <img src="/images/hipstersteve-dealwithit.png" style="width: 600px; height: 600px;">
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h3 class="question"><span class="highlight green">But what about <span class="highlight red">HTML5</span>?</span></h3>
+    <div class="slide">
+        <!-- Yeah?! -->
+        <img src="http://images.wikia.com/scratchpad/images/d/da/LARGEST_AWESOME_FACE_EVER!!!.png" style="width: 400px; height: 400px;">
+    </div>
+</section>
+
+<section class="slide">
+    <h1>Basic Use</h1>
+</section>
+
+<section class="slide">
+    <h2>Everyone knows how to use...</h2>
+    <ul>
+        <li class="slide">Variables
+            <ul>
+                <li class="slide"><span class="monospace">var x = 1;</span></li>
+            </ul>
+        </li>
+        <li class="slide">Strings
+            <ul>
+                <li class="slide"><span class="monospace">var y = "2";</span></li>
+            </ul>
+        </li>
+        <li class="slide">Operators
+            <ul>
+                <li class="slide"><span class="monospace">x + y;</span></li>
+            </ul>
+        </li>
+    </ul>
+    <h3 class="slide">But, you might not know...</h3>
+    <ul>
+        <li class="slide">
+            Variable declarations are parsed <span class="highlight">before</span> the rest of the code.
+        </li>
+        <li class="slide">The browser's <span class="highlight red">console</span> can do more than print.</li>
+        <li class="slide">1 + 2 = 12.</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h1>Let's take a look...</h1>
+</section>
+
+<section class="slide">
+</section>
+
+<section class="slide">
+    <h1>Functions</h1>
+</section>
+
+<section class="slide">
+    <h2>That's no moon!</h2>
+    <h3 class="slide">There are several ways to write a function.</h3>
+    <ul>
+        <li class="slide"><span class="monospace">function foo( ) {...}</span></li>
+        <li class="slide"><span class="monospace">var foo = function( ) {...}</span></li>
+        <li class="slide"><span class="monospace">someArray.forEach(function( ) {...});</span></li>
+    </ul>
+    <h3 class="slide">Which is right?</h3>
+    <ul>
+        <li class="slide">It depends.</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h1>Let's Explain...</h1>
+</section>
+
+<section class="slide">
+</section>
+
+<section class="slide">
+    <h2>Oh, by the way, functions are also objects.</h2>
+    <div class="slide">
+        <!-- Face-palm. -->
+        <img src="http://images.wikia.com/scratchpad/images/d/da/LARGEST_AWESOME_FACE_EVER!!!.png" style="width: 800px; height: 800px;">
+    </div>
+</section>
+
+<section class="slide">
+    <h2>...Seriously?!</h2>
+    <h3 class="slide">Functions can also have <span class="highlight red">properties</span>.</h3>
+    <div class="slide">
+        <pre>
+            <code>
+                function foo()
+                {
+                    // Some code here.
+                };
+
+                foo.bar = "Hi. I'm a property.";
+
+                // Prints "Hi. I'm a property."
+                console.log(foo.bar);
+            </code>
+        </pre>
+    </div>
+</section>
+
+<section class="slide">
+    <h1>Wait, what?</h1>
+</section>
+
+<section class="slide">
+</section>
+
+<section class="slide">
+    <h1><span class="highlight green">But wait, there's more!</span></h1>
+</section>
+
+<section class="slide">
+    <h2>Where are my classes?</h2>
+    <ul>
+        <li class="slide">Javascript has no concept of <span class="highlight blue">classes</span>.</li>
+        <ul>
+            <li class="slide">This is totally different from <span class="highlight purple">Java</span>, <span class="highlight yellow">C++</span>, <span class="highlight green">C#</span>, or basically <span class="highlight orange">any other</span> major object-oriented language!</li>
+            <li class="slide">Trying to use Javascript like <span class="highlight purple">Java</span> will only lead to <span class="highlight red">pain</span>!</li>
+        </ul>
+        <li class="slide">Instead, Javascript has <span class="highlight blue">Prototypes</span>.</li>
+    </ul>
+    <div class="slide">
+        <!-- What the heck is a prototype? -->
+        <img src="http://images.wikia.com/scratchpad/images/d/da/LARGEST_AWESOME_FACE_EVER!!!.png" style="width: 400px; height: 400px;">
+    </div>
+</section>
+
+<section class="slide">
+    <h2>Lemme s'plain...</h2>
+    <h3 class="slide">In Javascript, the <span class="highlight yellow">only</span> thing you have is <span class="highlight orange">objects</span>.</h3>
+    <ul>
+        <li class="slide">A function is used as a <span class="highlight red">Constructor</span> for object instances.</li>
+        <li class="slide">Instead of a class, the <span class="highlight red">Constructor</span> has an object called a <span class="highlight blue">Prototype</span> that contains fallbacks for any instance's properties.</li>
+        <li class="slide">The <span class="highlight blue">Prototype</span> is set as a property named 'prototype' on the <span class="highlight red">Constructor</span>.</li>
+        <li class="slide">Any object can be a <span class="highlight blue">Prototype</span>.</li>
+        <li class="slide">Instances can override properties from the <span class="highlight blue">Prototype</span>.</li>
+        <li class="slide">The <span class="highlight blue">Prototype</span> is shared by all instances of a <span class="highlight red">Constructor</span>.</li>
+        <li class="slide">Instances <span class="highlight">must</span> be created with <span class="highlight yellow">new</span> in order to inherit from their <span class="highlight red">Constructor's</span> <span class="highlight blue">Prototype</span>.</li>
+    </ul>
+    <h3 class="slide">Remember, failure is <span class="highlight yellow">always</span> an option!</h3>
+</section>
+
+<section class="slide">
+    <h1>How about an example?</h1>
+</section>
+
+<section class="slide">
+</section>
+
+<section class="slide">
+    <h1>Scope</h1>
+</section>
+
+<section class="slide">
+    <h2>Minty Fresh</h2>
+    <ul>
+        <li class="slide">When we use the term "scope", we mean the parts of the code that can access whatever we're talking about.</li>
+        <li class="slide">In Javascript, a variable's scope starts <span class="highlight yellow">at the beginning</span> of where it's defined, and includes everything "below" it.
+        <li class="slide">Only <span class="highlight red">declaration</span> location matter for scope, not where something is called from.
+            <div class="slide">
+                <pre>
+                    <code>
+                    function foo(callback) {
+                        // Prints "yo."
+                        callback();
+                    }
+
+                    function bar() {
+                        var test = "yo.";
+                        function cb() { console.log(test); }
+                        foo(cb);
+                    }
+                    </code>
+                </pre>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>The other shoe</h2>
+    <h3 class="slide">
+        Unfortunately, there's <span class="highlight yellow">exceptions</span>.
+        <ul>
+            <li class="slide"><span class="monospace highlight yellow">this</span></li>
+            <li class="slide"><span class="monospace highlight red">arguments</span></li>
+        </ul>
+    </h3>
+    <br/>
+    <h3 class="slide"><span class="larger">You see, this <span class="monospace highlight grey">this</span> isn't <span class="monospace highlight yellow">this</span>, but actually <span class="monospace highlight purple">this</span>.</span></h3>
+</section>
+
+<section class="slide">
+    <h2>Is 'this'?</h2>
+    <div class="slide">
+        <pre><code>
+var <span class="highlight red">monkey</span> = {
+    <span class="highlight yellow">bananas</span>: [...],
+    eatAllBananas: function() {
+        function eatBanana(banana) {
+            // Peel the banana?
+            <span class="highlight yellow">this</span>.peel(banana);
+        }
+
+        <span class="highlight red">this</span>.<span class="highlight yellow">bananas</span>.forEach(peel);
+    },
+
+    peel: function(){...}
+}
+        </code></pre>
+    </div>
+</section>
+
+<section class="slide">
+    <h1>So, how do we get around '<span class="highlight yellow">this</span>'?</h1>
+</section>
+
+<section class="slide">
+</section>
+
+<!----------------------------------->
+
+<section class="slide">
+    <h2>Questions?</h2>
+    <h3 class="slide"><span class="larger">Thanks for listening!</span></h3>
+    <h3 class="slide"><span class="larger">You can find the code for this presentation:</span></h3>
+    <ul>
+        <li class="slide"><a href=""></a></li>
+        <li class="slide"><a href=""></a></li>
+    </ul>
+</section>
+
+<!-- End slides. -->
+
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+    <span class="deck-status-current"></span>
+    /
+    <span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+    <label for="goto-slide">Go to slide:</label>
+    <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+    <datalist id="goto-datalist"></datalist>
+    <input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="/vendor/deckjs/jquery-1.7.2.min.js"></script>
+<script src="/vendor/deckjs/core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="/vendor/deckjs/core/deck.core.js"></script>
+<script src="/vendor/deckjs/extensions/hash/deck.hash.js"></script>
+<script src="/vendor/deckjs/extensions/menu/deck.menu.js"></script>
+<script src="/vendor/deckjs/extensions/goto/deck.goto.js"></script>
+<script src="/vendor/deckjs/extensions/status/deck.status.js"></script>
+<script src="/vendor/deckjs/extensions/navigation/deck.navigation.js"></script>
+<script src="/vendor/deckjs/extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+    $(function() {
+        $.deck('.slide');
+    });
+</script>
+</body>
+</html>

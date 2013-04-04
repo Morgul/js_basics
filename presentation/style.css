@@ -1,0 +1,98 @@
+.highlight
+{
+    color: #FFFFFF;
+    text-shadow: 0 0 15px #FFF, 0 0 2px #FFF;
+}
+
+.highlight.green
+{
+    color: #AF0;
+    text-shadow: 0 0 15px #AF0, 0 0 2px #FFF;
+}
+
+.highlight.pink
+{
+    color: #FF00FF;
+    text-shadow: 0 0 15px #F0F, 0 0 2px #FFF;
+}
+
+.highlight.red
+{
+    color: #FE0001;
+    text-shadow: 0 0 15px #FE0001, 0 0 2px #FFF;
+}
+
+.highlight.blue
+{
+    color: #09F;
+    text-shadow: 0 0 15px #09F, 0 0 2px #FFF;
+}
+
+.highlight.orange
+{
+    color: #FF9900;
+    text-shadow: 0 0 15px #F90, 0 0 2px #FFF;
+}
+
+.highlight.purple
+{
+    color: #993CF3;
+    text-shadow: 0 0 15px #993CF3, 0 0 2px #FFF;
+}
+
+.highlight.yellow
+{
+    color: #FFFF00;
+    text-shadow: 0 0 15px #FF0, 0 0 2px #FFF;
+}
+
+.highlight.grey
+{
+    color: #777;
+    text-shadow: 0 0 15px #999, 0 0 2px #FFF;
+}
+
+.monospace
+{
+    font-family: monospace;
+}
+
+#google .small
+{
+    font-size: .65em;
+    font-weight: 500;
+}
+
+.larger
+{
+    font-size: 1.5em !important;
+}
+
+.center
+{
+    text-align: center;
+}
+
+section.slide
+{
+    font-size: 1.5em;
+    position: relative;
+}
+
+section.slide h1
+{
+    position: relative;
+    z-index: 5;
+}
+
+section.slide h3.question
+{
+    font-size: 5em;
+    text-align: center;
+}
+
+.deck-next-link,
+.deck-prev-link
+{
+    display: none !important;
+}

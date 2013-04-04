@@ -1,0 +1,23 @@
+{
+  "name": "js_basics",
+  "version": "0.0.1",
+  "description": "A presentation on the basics of Javascript.",
+  "main": "serve.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Morgul/js_basics.git"
+  },
+  "dependencies": {
+      "node-static": "latest"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "presentation"
+  ],
+  "author": "Christopher S. Case <ccase@armt.com>",
+  "license": "MIT"
+}
