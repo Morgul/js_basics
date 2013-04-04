@@ -79,6 +79,11 @@ section.slide
     position: relative;
 }
 
+section.slide ul ul
+{
+    margin-bottom: 0;
+}
+
 section.slide h1
 {
     position: relative;

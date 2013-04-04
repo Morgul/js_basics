@@ -16,3 +16,6 @@ To view the presentation, simple do the following:
 Then point your browser to: `http://localhost:8080`
 
 Enjoy!
+
+P.S. The images of Hipster Steve were made by Ginny Case. They are <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs 3.0 Unported</a>.
+You should check out her <a href="http://leftiesrevenge.deviantart.com">DeviantArt</a> page.
